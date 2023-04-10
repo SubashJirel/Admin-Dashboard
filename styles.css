@@ -1,0 +1,60 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr;
+}
+
+.sidebar {
+    grid-row: 1/-1;
+    border: 2px solid red;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    grid-column: 1/-1;
+
+    background-color: #ffffff;
+}
+.searchBox {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border: 2px solid green;
+
+}
+.navbar {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    border: 2px solid blue;
+}
+.main {
+    background-color: #e2e8f0;
+}
+
+.Projects-Container  {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    border: 2px dotted yellow;
+
+    padding: 10px;
+    /* grid-row: 2/4; */
+}
+.Project-Section {
+    grid-row: 2/4;
+}
+.Projects-Container>div {
+    border: 2px solid black;
+    height: 200px;
+}
+
+.Trending-Profiles-Section {
+    /* grid-column: 2/3
+    grid-row: ; */
+}
