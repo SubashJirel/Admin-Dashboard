@@ -1,6 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: minmax(180px,1fr) 4fr;
 }
 
 .main {
@@ -11,7 +15,7 @@
 
 .sidebar {
     grid-row: 1/-1;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .header {
@@ -53,8 +57,28 @@
     border: 2px solid black;
     height: 200px;
 }
+/* making of the side bar */
 
-.Trending-Profiles-Section {
-    /* grid-column: 2/3
-    grid-row: ; */
+.sidebar {
+    background-color: #1f2937;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
+.sidebar * {
+    color: #f3f4f6;
+    font-size: 1.5rem;
+  
+    
+}
+.sidebar div {
+    padding: 10px 0 10px 10px;
+}
+.sidebar div span {
+    margin-right: 1rem;
+}
+.sidebar .sidebar-logo {
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
