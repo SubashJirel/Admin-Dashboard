@@ -29,7 +29,6 @@
 .searchBox {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    border: 2px solid green;
 
 }
 .navbar {
@@ -76,6 +75,7 @@
 }
 .sidebar div span {
     margin-right: 1rem;
+    vertical-align: -6px; /*to align the icon with the text*/
 }
 .sidebar .sidebar-logo {
     font-weight: 700;

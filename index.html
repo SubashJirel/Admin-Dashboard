@@ -9,7 +9,45 @@
     rel="stylesheet"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./styles.css">
+    <style>
+        .header {
+            background-color: #cbd5e1;
+            padding:10px 0 0 1rem;
+        }
+        button {
+            margin: 0;
+            padding: 0;
+            background-color: #cbd5e1;
+            /* border: 2px solid red; */
+            border: 0;
+        }
+        .searchBox {
+            display: grid;
+            grid-template-columns: 3fr 1.5fr;
+            padding: 8px;
+        }
+        .searchBox form {
+            display: grid;
+            grid-template-columns: auto 1fr;
 
+        }
+        .searchBox form input {
+            border-radius: 16px;
+            background-color: #e5e7eb;
+
+        }
+        .header .searchBox .profile {
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+        }
+        .batmanImage {
+            height: 1.5rem;
+            width: 1.5rem;
+            background: url(./images/batman.png) no-repeat center center/cover;
+        }
+        
+    </style>
 
 </head>
 <body>
@@ -83,9 +121,19 @@
     <div class="main">
         <div class="header">
             <div class="searchBox">
-                <input type="search" name="search" id="search">
+                <form action="">
+                    <button type="button" class="searchButton">
+                        <span class="material-symbols-outlined">
+                            search
+                            </span>
+                    </button>
+                    <input type="search" name="search" id="search">
+                </form>
                 <div class="profile">
-                    <div class="image">Image</div>
+                    <span class="material-symbols-outlined">
+                        notifications_active
+                        </span>
+                    <div class="batmanImage"></div>
                     <h5>Jogo Bogo</h3>
                 </div>
             </div>
