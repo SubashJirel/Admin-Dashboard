@@ -21,7 +21,7 @@
 .header {
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
+    /* border-bottom: 4px solid #1f2937; */
     grid-column: 1/-1;
 
     background-color: #ffffff;
@@ -31,11 +31,7 @@
     grid-template-columns: 4fr 1fr;
 
 }
-.navbar {
-    display: grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr;
-    border: 2px solid blue;
-}
+
 .main {
     background-color: #e2e8f0;
 }
@@ -47,7 +43,7 @@
     border: 2px dotted yellow;
 
     padding: 10px;
-    /* grid-row: 2/4; */
+   
 }
 .Project-Section {
     grid-row: 2/4;
@@ -122,9 +118,11 @@ button {
 
 /* making the navbar section of the header */
 .header .navbar {
-    display: grid;
-    grid-template-columns: 1fr auto auto auto;
-   gap: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 16px;
 }
 
 .header .navbar button {
@@ -137,10 +135,12 @@ button {
 }
 
 .header .navbar .profileInfo {
-    display: grid;
-    grid-template-columns: 3rem 3rem;
-    place-items: center;
+    display: flex;
 
+}
+body > div > div.main > div.header > div.navbar > buttoncontainer {
+    display: flex;
+    gap: 16px;
 }
 .header .navbar .profileInfo .batmanImage {
     grid-row: 1/3;
@@ -149,15 +149,15 @@ button {
     
 }
 
-.header > .searchBox > div > h5 {
+.header > .searchBox > div  h5 {
     font-size: 1.2rem;
 }
-.header > .navbar > div > h6 {
+.header > .navbar > div  h6 {
     font-size: 1rem;
     margin-left: 3rem;
 }
 
-.header > .navbar > div > h3 {
+.header > .navbar > div  h3 {
     font-size: 2rem;
     margin-left: 3rem;
     
